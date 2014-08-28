@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Not used in current version. Layout can be used in future for extending results
+with statistics -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="30dp" >
+
+    <!-- Download -->
+        
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+	        android:id="@+id/textView1"
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:layout_height="wrap_content"
+	        android:text="@string/result_list_child_statistics_download"
+	        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/result_list_child_statistics_traffic_shaping"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/result_list_child_statistics_traffic_shaping_not_detected" />
+    </LinearLayout>
+    
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.75"
+            android:text="@string/result_list_child_statistics_mann_whitney" />
+
+        <TextView
+            android:id="@+id/result_list_child_statistics_download_mann_whitney"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:text="@string/result_list_child_statistics_not_available" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.75"
+            android:text="@string/result_list_child_statistics_ucritical" />
+
+        <TextView
+            android:id="@+id/result_list_child_statistics_download_ucritical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:text="@string/result_list_child_statistics_not_available" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.75"
+            android:text="@string/result_list_child_statistics_random_mean_throughput" />
+
+        <TextView
+            android:id="@+id/result_list_child_statistics_download_random_mean_throughput"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:text="@string/result_list_child_statistics_not_available" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.75"
+            android:text="@string/result_list_child_statistics_protocol_mean_throughput" />
+
+        <TextView
+            android:id="@+id/result_list_child_statistics_download_protocol_mean_throughput"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:text="@string/result_list_child_statistics_not_available" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.75"
+            android:text="@string/result_list_child_statistics_random_confidence_interval" />
+
+        <TextView
+            android:id="@+id/result_list_child_statistics_download_random_confidence_interval"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:text="@string/result_list_child_statistics_not_available" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.75"
+            android:text="@string/result_list_child_statistics_protocol_confidence_interval" />
+
+        <TextView
+            android:id="@+id/result_list_child_statistics_download_protocol_confidence_interval"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:text="@string/result_list_child_statistics_not_available" />
+    </LinearLayout>
+    
+    <!-- Space -->
+    <View
+	  android:layout_width="match_parent"
+	  android:layout_height="10dp" />
+
+    
+    <!-- Upload -->
+        
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+	        android:id="@+id/textView1"
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:layout_height="wrap_content"
+	        android:text="@string/result_list_child_statistics_upload"
+	        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/result_list_child_statistics_traffic_shaping"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/result_list_child_statistics_traffic_shaping_not_detected" />
+    </LinearLayout>
+    
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.75"
+            android:text="@string/result_list_child_statistics_mann_whitney" />
+
+        <TextView
+            android:id="@+id/result_list_child_statistics_upload_mann_whitney"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:text="@string/result_list_child_statistics_not_available" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.75"
+            android:text="@string/result_list_child_statistics_ucritical" />
+
+        <TextView
+            android:id="@+id/result_list_child_statistics_upload_ucritical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:text="@string/result_list_child_statistics_not_available" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.75"
+            android:text="@string/result_list_child_statistics_random_mean_throughput" />
+
+        <TextView
+            android:id="@+id/result_list_child_statistics_upload_random_mean_throughput"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:text="@string/result_list_child_statistics_not_available" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.75"
+            android:text="@string/result_list_child_statistics_protocol_mean_throughput" />
+
+        <TextView
+            android:id="@+id/result_list_child_statistics_upload_protocol_mean_throughput"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:text="@string/result_list_child_statistics_not_available" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.75"
+            android:text="@string/result_list_child_statistics_random_confidence_interval" />
+
+        <TextView
+            android:id="@+id/result_list_child_statistics_upload_random_confidence_interval"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:text="@string/result_list_child_statistics_not_available" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.75"
+            android:text="@string/result_list_child_statistics_protocol_confidence_interval" />
+
+        <TextView
+            android:id="@+id/result_list_child_statistics_upload_protocol_confidence_interval"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:text="@string/result_list_child_statistics_not_available" />
+    </LinearLayout>
+
+</LinearLayout>

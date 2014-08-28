@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/lightsteelblue"
+    android:padding="10dp">
+    
+<TextView  
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:textColor="@color/black"					 
+	android:textSize="18dp"
+	android:paddingBottom="5dp"
+	android:gravity="center_horizontal"
+    android:text="@string/protocol_spec_overview" />	
+    
+    	<TableLayout android:layout_width="fill_parent" 
+  			android:layout_height="wrap_content"
+  			android:stretchColumns="1"  			
+  			android:paddingLeft="5dip"
+  			android:paddingRight="5dip"
+  			android:layout_gravity="center_vertical"
+  			android:background="@android:color/white">
+    	
+    		<TableRow android:paddingTop="10dip">  		
+    			<TextView android:layout_height="wrap_content" 
+      				android:text="@string/protocol_name" 
+      				android:textSize="18dip"
+      				android:paddingRight="15dip"
+      				android:textColor="@android:color/black"
+      				android:textStyle="bold"/>
+      			
+    			<TextView android:id="@+id/text_view_protocol_name" 
+      				android:layout_width="fill_parent" 
+      				android:layout_height="wrap_content"       			
+      				android:singleLine="true"
+      				android:textColor="@color/black"					 
+					android:textSize="18dp"/>      			
+  			</TableRow>
+  			
+			<TableRow android:paddingTop="10dip">
+		    	<TextView android:layout_height="wrap_content" 
+      				android:text="@string/port1" 
+      				android:textSize="18dip"
+      				android:paddingRight="15dip"
+      				android:textColor="@android:color/black"
+      				android:textStyle="bold"
+      				android:layout_gravity="center_vertical"/>
+      				
+    			<TextView android:id="@+id/text_view_port1" 
+      				android:layout_width="fill_parent" 
+      				android:layout_height="wrap_content"       			
+      				android:singleLine="true"
+      				android:textColor="@color/black"					 
+					android:textSize="18dp"/>      				      			      			
+			</TableRow>	  			 		
+
+			<TableRow android:paddingTop="10dip">
+		    	<TextView android:layout_height="wrap_content" 
+      				android:text="@string/port2" 
+      				android:textSize="18dip"
+      				android:paddingRight="15dip"
+      				android:textColor="@android:color/black"
+      				android:textStyle="bold"
+      				android:layout_gravity="center_vertical"/>
+      				
+    			<TextView android:id="@+id/text_view_port2" 
+      				android:layout_width="fill_parent" 
+      				android:layout_height="wrap_content"       			
+      				android:singleLine="true"
+      				android:textColor="@color/black"					 
+					android:textSize="18dp"/>      				      			      			
+			</TableRow>	  	
+			
+			<TableRow android:paddingTop="10dip">
+		    	<TextView android:layout_height="wrap_content" 
+      				android:text="@string/number_of_tests" 
+      				android:textSize="18dip"
+      				android:paddingRight="15dip"
+      				android:textColor="@android:color/black"
+      				android:textStyle="bold"
+      				android:layout_gravity="center_vertical"/>
+      				
+    			<EditText android:id="@+id/edit_text_cycles_number" 
+    				android:inputType="number"
+    				android:text="5"    		
+    				android:maxLength="2"		
+      				android:layout_width="wrap_content" 
+      				android:layout_height="wrap_content"       			
+      				android:singleLine="true"
+      				android:textColor="@android:color/black"/>      				      			      			
+			</TableRow>	 		
+			 						
+    	</TableLayout>
+    	
+    <LinearLayout android:orientation="vertical"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"    	
+    	android:id="@+id/linear_layout_start_measurements_block"
+    	android:visibility="visible">
+    	
+    	    <TextView android:layout_width="fill_parent"
+    			android:layout_height="wrap_content"
+    			android:text="@string/start_description"
+    			android:textColor="@color/black"
+    			android:paddingTop="10dip"
+    			android:paddingBottom="10dip"/>	
+    			
+			<Button android:id="@+id/button_start_test"		
+				android:layout_gravity="center_horizontal"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/start_measurements"
+				android:drawablePadding="5dip"
+				android:drawableLeft="@drawable/timer_icon"		
+				android:textColor="@color/black"/>    			
+				    	
+    </LinearLayout>	
+    	
+	<LinearLayout android:id="@+id/linear_layout_results_block"
+		android:orientation="vertical"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:visibility="gone">
+		
+		    <TextView android:id="@+id/text_view_test_completed" 
+		    	android:layout_width="fill_parent"
+    			android:layout_height="wrap_content"    			
+    			android:textColor="@color/black"
+    			android:paddingTop="10dip"
+    			android:paddingBottom="10dip"/>	
+
+			<LinearLayout android:orientation="horizontal"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:gravity="center_horizontal">
+
+					<Button android:id="@+id/button_remove_results"		
+						android:layout_gravity="center_horizontal"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="@string/delete_results"
+						android:drawablePadding="5dip"
+						android:drawableLeft="@drawable/delete_icon"		
+						android:textColor="@color/black"/> 
+
+					<Button android:id="@+id/button_submit_results"		
+						android:layout_gravity="center_horizontal"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="@string/upload_results"
+						android:drawablePadding="5dip"
+						android:drawableLeft="@drawable/upload_icon"		
+						android:textColor="@color/black"/>    				    
+   				 		
+			</LinearLayout>		
+			
+			<LinearLayout android:orientation="horizontal"				
+				android:layout_width="wrap_content"
+				android:layout_gravity="center_horizontal"
+				android:layout_height="wrap_content">
+				
+					<Button android:id="@+id/button_view_results"
+						android:layout_gravity="center"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:drawablePadding="5dip"
+						android:textColor="@color/black"
+						android:drawableLeft="@drawable/page_icon"
+						android:text="@string/view_results"/>
+			</LinearLayout>
+	</LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="10dp"
+    android:background="@color/lightsteelblue">
+    
+<TextView android:id="@+id/text_view_test_status"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:textColor="@color/black"					 
+	android:textSize="18dp"
+	android:paddingBottom="5dp"
+	android:visibility="invisible"/>    
+
+<TextView android:id="@+id/text_view_initialize_status"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:textColor="@color/black"  
+	android:textSize="18dp"
+	android:paddingBottom="5dp"
+	android:visibility="invisible"/> 	
+
+<TextView android:id="@+id/text_view_connect_to_server_status"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:textColor="@color/black"  
+	android:textSize="18dp"
+	android:paddingBottom="5dp"
+	android:visibility="invisible"/>	
+	
+<TextView  
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text=""
+    android:id="@+id/textView"
+    />
+        	
+<ListView android:id="@+id/list_view_protocol_specification_list"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"/>
+			    
+</LinearLayout>

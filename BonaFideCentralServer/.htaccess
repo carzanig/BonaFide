@@ -1,0 +1,5 @@
+Options -Indexes 
+
+RewriteEngine On
+RewriteRule ^(webview)($|/) - [L]
+RewriteRule ^(.*)$ rest_handler.php?url=$1 [nc,qsa]

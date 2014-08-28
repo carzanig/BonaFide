@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+	<PreferenceCategory
+	        android:title="@string/settings_group_automeasurement"
+	        android:key="automeasurement_category">            	          
+	        
+	    	<SwitchPreference
+	    	    android:key="automeasurement_active"
+	    	    android:summaryOn="@string/settings_automeasurement_status_active"
+	    	    android:summaryOff="@string/settings_automeasurement_status_inactive"
+	    	    android:defaultValue="false" />
+	    
+	        <EditTextPreference
+	            android:key="automeasurement_treshold_time"
+	            android:title="@string/settings_automeasurement_treshold_time"
+	            android:summary="@string/settings_automeasurement_treshold_time_summary"
+	            android:dialogTitle="@string/settings_automeasurement_treshold_time_dialog_title"
+	            android:dialogMessage="@string/settings_automeasurement_treshold_time_dialog_message"   
+	            android:defaultValue="10"
+	            />
+	        
+	        <EditTextPreference
+	            android:key="automeasurement_treshold_movement"
+	            android:title="@string/settings_automeasurement_treshold_movement"
+	            android:summary="@string/settings_automeasurement_treshold_movement_summary"
+	            android:dialogTitle="@string/settings_automeasurement_treshold_movement_dialog_title"
+	            android:dialogMessage="@string/settings_automeasurement_treshold_movement_dialog_message"   
+	            android:defaultValue="150"
+	            />
+	 
+	    </PreferenceCategory>
+
+		<PreferenceCategory
+	        android:title="@string/settings_group_central_server"
+	        android:key="central_server_category">
+	 
+	        <EditTextPreference
+	            android:key="central_server_url"
+	            android:title="@string/settings_central_server_host"
+	            android:summary="@string/settings_central_server_host_summary"
+	            android:dialogTitle="@string/settings_central_server_host_dialog_title"
+	            android:dialogMessage="@string/settings_central_server_host_dialog_message"   
+	            android:defaultValue="https://bonafide.pw/rest/" />
+	        
+	        <EditTextPreference
+	            android:key="central_server_user_token"
+	            android:title="@string/settings_central_user_token"
+	            android:summary="@string/settings_central_user_token_summary"
+	            android:dialogTitle="@string/settings_central_user_token_dialog_title"
+	            android:dialogMessage="@string/settings_central_user_token_dialog_message"   
+	            android:defaultValue="" />
+		</PreferenceCategory>
+
+</PreferenceScreen>

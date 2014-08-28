@@ -1,0 +1,58 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/frontend_search"
+        android:orderInCategory="90"
+        android:showAsAction="always"
+        android:title="@string/frontend_action_search"
+        android:icon="@drawable/ic_action_search"
+        android:visible="false"/>
+    <item
+        android:id="@+id/frontend_results"
+        android:orderInCategory="95"
+        android:showAsAction="ifRoom"
+        android:title="@string/frontend_action_results"
+        android:icon="@drawable/ic_action_place" />
+    <item
+        android:id="@+id/frontend_overflow"
+		android:orderInCategory="110"
+        android:showAsAction="always"
+        android:title="@string/frontend_action_overflow"
+        android:icon="@drawable/ic_action_overflow">
+        
+    	<menu>
+    	    <item
+		        android:id="@+id/frontend_custom_measurement"
+				android:orderInCategory="111"
+		        android:showAsAction="always|withText"
+		        android:title="@string/frontend_action_custom_measurement"
+		        android:icon="@drawable/ic_action_rotate_left" />
+    	    
+    	    <item
+		        android:id="@+id/frontend_settings"
+		        android:orderInCategory="122"
+		        android:showAsAction="always|withText"
+		        android:title="@string/frontend_action_settings"
+		        android:icon="@drawable/ic_action_settings" />
+    	    <item
+		        android:id="@+id/frontend_migration"
+		        android:orderInCategory="123"
+		        android:showAsAction="always|withText"
+		        android:title="@string/frontend_action_migration"
+		        android:icon="@drawable/ic_action_cloud" />
+    	    <item
+		        android:id="@+id/frontend_privacy"
+				android:orderInCategory="125"
+		        android:showAsAction="always|withText"
+		        android:title="@string/frontend_action_privacy"
+		        android:icon="@drawable/ic_action_about" />
+    	    <item
+		        android:id="@+id/frontend_about"
+				android:orderInCategory="126"
+		        android:showAsAction="always|withText"
+		        android:title="@string/frontend_action_about"
+		        android:icon="@drawable/ic_action_about" />
+    	</menu>    
+    </item>
+
+</menu>

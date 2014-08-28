@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="de.jacobs.university.cnds.bonafide.plus"
+    android:versionCode="2"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="14" />
+
+    <permission
+        android:name="de.jacobs.university.cnds.bonafide.plus.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" >
+    </permission>
+
+    <uses-permission android:name="de.jacobs.university.cnds.bonafide.plus.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:debuggable="false"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" >
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyAS8mW8CSqg2WzdQyot1-90-_NFzi5Zre4" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <service
+            android:name="de.jacobs.university.cnds.bonafide.plus.services.BonafideService"
+            android:exported="false" />
+        <service
+            android:name="de.jacobs.university.cnds.bonafide.plus.services.MeasurementService"
+            android:exported="false" />
+        <!--
+     removed activities 
+        <activity
+            android:name="de.jacobs.university.cnds.bonafide.activities.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="de.jacobs.university.cnds.bonafide.activities.RunMeasurementTestActivity"
+            android:screenOrientation="portrait" />
+        -->
+        <!--<activity
+            android:name="de.jacobs.university.cnds.bonafide.activities.MaintainMeasurementResultsActivity"
+            android:screenOrientation="portrait" >
+
+            
+              intent-filter>
+        		<action android:name="android.intent.action.VIEW" />
+        		<category android:name="android.intent.category.DEFAULT" />
+        		<category android:name="android.intent.category.BROWSABLE" />
+        		<data android:mimeType="text/xml" />
+      		</intent-filter
+            
+        </activity>-->
+        <activity
+            android:name="de.jacobs.university.cnds.bonafide.plus.activities.AboutActivity"
+            android:label="@string/title_about_activity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="de.jacobs.university.cnds.bonafide.plus.activities.SettingsActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="de.jacobs.university.cnds.bonafide.plus.activities.FrontendActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Declaring broadcast receiver for alarm reciever -->
+        <receiver
+            android:name="de.jacobs.university.cnds.bonafide.plus.services.AlarmReciever"
+            android:enabled="true"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="de.jacobs.university.cnds.bonafide.services" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Declaring broadcast receiver for BOOT_COMPLETED event -->
+        <receiver
+            android:name="de.jacobs.university.cnds.bonafide.plus.services.SystemBootReciever"
+            android:enabled="true"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Declaring broadcast receiver for CONNECTIVITY_CHANGE event -->
+        <receiver
+            android:name="de.jacobs.university.cnds.bonafide.plus.services.NetworkConnectivityReciever"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="de.jacobs.university.cnds.bonafide.plus.activities.ResultsActivity"
+            android:icon="@drawable/ic_action_place"
+            android:label="@string/activity_results_title"
+            android:parentActivityName="de.jacobs.university.cnds.bonafide.plus.activities.FrontendActivity">
+            <!-- Parent activity meta-data to support API level 7+ -->
+		        <meta-data
+		            android:name="android.support.PARENT_ACTIVITY"
+		            android:value="de.jacobs.university.cnds.bonafide.activities.FrontendActivity" />
+        </activity>
+        <activity
+            android:name="de.jacobs.university.cnds.bonafide.plus.activities.CustomMeasurementActivity"
+            android:label="@string/custom_measurement_activity_title" >
+        </activity>
+        <activity
+            android:name="de.jacobs.university.cnds.bonafide.plus.activities.PrivacyActivity"
+            android:label="@string/title_activity_privacy" >
+        </activity>
+    </application>
+
+</manifest>

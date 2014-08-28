@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="10dp"
+    android:background="@color/lightsteelblue">
+
+   	<ScrollView android:layout_width="fill_parent"
+       	android:layout_height="fill_parent"
+       	android:gravity="center">
+    
+        <LinearLayout android:layout_width="fill_parent"
+       		android:layout_height="fill_parent"
+       		android:gravity="center"
+       		android:orientation="vertical">
+       		
+       		<LinearLayout android:orientation="horizontal"
+       			android:layout_width="fill_parent"
+       			android:layout_height="wrap_content"
+       			android:gravity="center"
+       			android:paddingBottom="10dip">
+       			
+       			<ImageView android:src="@drawable/ic_launcher"
+       				android:layout_width="wrap_content"
+       				android:layout_height="wrap_content"/>
+       				
+       			<ImageView android:padding="2dip" 
+       				android:src="@drawable/cnds_logo"
+       				android:layout_width="wrap_content"
+       				android:layout_height="wrap_content"/>       				       			
+       		</LinearLayout>
+       		
+       		<TextView android:text="@string/about_question_1"
+       		    android:layout_width="fill_parent"
+       			android:layout_height="wrap_content"
+       			android:textColor="@color/black"
+       			android:textSize="15dip"
+       			android:textStyle="bold|italic"/>
+       		
+       		<TextView android:text="@string/about_answer_1"
+       		    android:layout_width="fill_parent"
+       			android:layout_height="wrap_content"
+       			android:textColor="@color/black"
+       			android:textSize="15dip"/>
+       			
+       		<TextView android:text="@string/about_question_2"
+       		    android:layout_width="fill_parent"
+       			android:layout_height="wrap_content"
+       			android:textColor="@color/black"
+       			android:textSize="15dip"
+       			android:textStyle="bold|italic"
+       			android:paddingTop="10dip"/>     
+       			
+       		<TextView android:text="@string/about_answer_2"
+       		    android:layout_width="fill_parent"
+       			android:layout_height="wrap_content"
+       			android:textColor="@color/black"
+       			android:textSize="15dip"/>       			  			
+
+       		<TextView android:text="@string/about_question_3"
+       		    android:layout_width="fill_parent"
+       			android:layout_height="wrap_content"
+       			android:textColor="@color/black"
+       			android:textSize="15dip"
+       			android:textStyle="bold|italic"
+       			android:paddingTop="10dip"/> 
+       			
+       		<TextView android:text="@string/about_answer_3"
+       		    android:layout_width="fill_parent"
+       			android:layout_height="wrap_content"
+       			android:textColor="@color/black"
+       			android:textSize="15dip"/>       
+       			   			
+       		<TextView android:text="@string/about_question_4"
+       		    android:layout_width="fill_parent"
+       			android:layout_height="wrap_content"
+       			android:textColor="@color/black"
+       			android:textSize="15dip"
+       			android:textStyle="bold|italic"
+       			android:paddingTop="10dip"/> 
+       			
+       		<TextView android:text="@string/about_answer_4"
+       		    android:layout_width="fill_parent"
+       			android:layout_height="wrap_content"
+       			android:textColor="@color/black"
+       			android:textSize="15dip"/>       	
+       			
+       		<TextView android:text="@string/about_question_5"
+       		    android:layout_width="fill_parent"
+       			android:layout_height="wrap_content"
+       			android:textColor="@color/black"
+       			android:textSize="15dip"
+       			android:textStyle="bold|italic"
+       			android:paddingTop="10dip"/> 
+       			
+       		<TextView android:text="@string/about_answer_5"
+       		    android:layout_width="fill_parent"
+       			android:layout_height="wrap_content"
+       			android:textColor="@color/black"
+       			android:textSize="15dip"/>          					   			
+    		
+       	</LinearLayout>	       	
+    </ScrollView>  	    
+    
+</LinearLayout>    

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src/main/java"/>
+	<classpathentry kind="src" path="src/test/java"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="lib/jcommander-1.7.jar"/>
+	<classpathentry kind="lib" path="lib/log4j-1.2.16.jar"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/BonaFideCommon"/>
+	<classpathentry kind="lib" path="C:/Users/Tomas/Documents/Skola/Masterarbeit/BonaFide GIT/BonaFideServer/lib/jersey-bundle-1.18.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Tomas/Documents/Skola/Masterarbeit/BonaFide GIT/BonaFideServer/lib/jackson-mini-1.9.11.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
